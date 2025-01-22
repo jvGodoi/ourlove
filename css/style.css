@@ -1,0 +1,475 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background: linear-gradient(to right, #fff 0% 30%, #e5e5e5 30%);
+  overflow: hidden;
+}
+.galeria-box {
+  grid-row: 1;
+}
+.principal {
+  height: 100vh;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-items: center;
+  gap: 60px;
+  padding: 2rem;
+}
+.conteudo-central {
+  grid-column: 2/4;
+  justify-self: start;
+  position: relative;
+}
+.conteudo-midia {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+  column-gap: 32px;
+  position: relative;
+  max-width: 750px;
+}
+.conteudo-midia-2 {
+  display: grid;
+  place-items: start;
+  grid-template-columns: 1fr;
+  column-gap: 32px;
+  position: relative;
+  max-width: 750px;
+}
+.conteudo-midia-2 p {
+  width: 100%;
+}
+
+.conteudo-midia::before {
+  content: url("../img/coracao-24.png");
+  position: absolute;
+  right: 47%;
+  bottom: 18px;
+}
+
+.conteudo-midia::after {
+  content: "";
+  background-color: #d6d6d6;
+  grid-column: 1/-1;
+  height: 3px;
+  width: 100%;
+  margin: 32px 0;
+}
+
+.dias {
+  /* background-color: #f8fafc; */
+  background: linear-gradient(to bottom, #dddddd 50px, #fff 50px);
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  position: relative;
+  justify-self: start;
+  padding-top: 60px;
+  padding-bottom: 27px;
+  padding-left: 45px;
+  padding-right: 45px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+.cal {
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  border-radius: 30px;
+}
+.cal-1 {
+  width: 30px;
+  height: 55px;
+  background-color: #dddddd;
+  border: 1px solid #c5c5c5;
+  right: 82px;
+}
+
+.cal-2 {
+  width: 30px;
+  height: 55px;
+  border: 1px solid #c5c5c5;
+  background-color: #dddddd;
+  left: 82px;
+}
+.cal-3 {
+  width: 30px;
+  height: 55px;
+  border: 1px solid #c5c5c5;
+  background-color: #dddddd;
+  left: 30px;
+}
+.cal-4 {
+  width: 30px;
+  height: 55px;
+  border: 1px solid #c5c5c5;
+  background-color: #dddddd;
+  right: 30px;
+}
+.conteudo-central-p {
+  font-size: 1.5rem;
+  color: #5f5f5f;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.musica {
+  border-radius: 50%;
+  grid-column: 2 / 3;
+  min-width: 100%;
+}
+
+.musica-box {
+  background-color: var(--cor-c1);
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.musica-titulo {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.titulo {
+  grid-column: 1 / 2;
+  align-self: end;
+  grid-row: 1;
+  order: 1;
+  width: 100%;
+  display: block;
+}
+
+.cantor {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+.capa-box {
+  height: 100%;
+}
+
+.capa {
+  height: 100%;
+  grid-column: 2 / 3;
+  border-radius: 4px;
+}
+
+.musica-player {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: var(--cor-0);
+  border-radius: 0 0 10px 10px;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 8px;
+  border-radius: 10px;
+  background: var(--cor-2);
+  position: relative;
+  cursor: pointer;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background: var(--cor-c1);
+  transition: width 0.1s ease;
+}
+
+.musica-player-btns {
+  width: 100%;
+  justify-content: center;
+  gap: 16px;
+  display: flex;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-7);
+  border-radius: 50%;
+  width: max-content;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icon:hover {
+  color: var(--cor-c1);
+}
+
+.icon:active {
+  color: var(--cor-c2);
+}
+
+.conteudo-central-p-2 {
+  width: 0ch;
+}
+
+.dias-contador-box {
+  /* grid-column: 2 / 3; */
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  background-color: var(--cor-c2);
+  padding: 2rem 0rem;
+  border-radius: 10px;
+  border: 3px solid #a71426;
+}
+
+.dias-contador-box::after {
+  content: "";
+  height: 20px;
+  width: 60px;
+  background-color: #582f0e;
+  border-top: 2px solid #301804;
+  border-left: 2px solid #301804;
+  border-right: 2px solid #301804;
+  right: 30px;
+  bottom: -25px;
+  z-index: -2;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.dias-contador-box::before {
+  content: "";
+  height: 20px;
+  width: 60px;
+  background-color: #582f0e;
+  border-top: 2px solid #301804;
+  border-left: 2px solid #301804;
+  border-right: 2px solid #301804;
+  left: 30px;
+  bottom: -25px;
+  z-index: -2;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.dias-contador {
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  min-width: 190px;
+  position: relative;
+}
+
+.dias-contador::before {
+  content: "";
+  width: 128px;
+  height: 128px;
+  background-repeat: no-repeat;
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: -60px;
+  background-image: url("../img/love-clock-64.png");
+}
+
+.galeria {
+  background-color: var(--cor-0);
+  grid-column: 1 / 2;
+  grid-row: 1;
+  justify-self: start;
+}
+
+.galeria-polaroid {
+  position: relative;
+  box-shadow: 0px 0px 1px #5f5f5f;
+  border: 1px solid red;
+  width: max-content;
+  margin: 0 auto;
+  border-top: 30px solid var(--cor-0);
+  border-right: 30px solid var(--cor-0);
+  border-left: 30px solid var(--cor-0);
+  border-bottom: 70px solid var(--cor-0);
+}
+
+.galeria-polaroid-conteudo {
+  display: flex;
+  padding-top: 32px;
+  position: relative;
+}
+
+.amor {
+  width: 60px;
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+}
+
+@media (max-width: 1200px) {
+  .principal {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .principal {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    overflow: initial;
+    background: #c5c5c5;
+  }
+
+  .conteudo-central {
+    grid-column: auto;
+    justify-self: center;
+  }
+  .principal {
+    grid-template-columns: 1fr;
+    align-items: center;
+    height: auto;
+    width: 850px;
+  }
+  .galeria {
+    justify-self: center;
+  }
+
+  .conteudo-midia {
+    grid-template-columns: 1fr;
+    row-gap: 16px;
+    margin-top: 42px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    place-items: center;
+  }
+  .cal-1 {
+    right: 72px;
+  }
+  .cal-2 {
+    left: 72px;
+  }
+  .dias,
+  .musica {
+    grid-column: auto;
+    gap: 16px;
+  }
+  .musica {
+    min-width: 100%;
+  }
+  .dias-contador-box {
+    top: 20px;
+    height: max-content;
+    width: auto;
+  }
+  .dias-contador-box::after {
+    content: "";
+    height: 20px;
+    width: 60px;
+    right: 30px;
+    top: -40px;
+    z-index: -10;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+
+  .dias-contador-box::before {
+    content: "";
+    height: 20px;
+    width: 60px;
+    background-color: #582f0e;
+    border-top: 2px solid #301804;
+    border-left: 2px solid #301804;
+    border-right: 2px solid #301804;
+    left: 30px;
+    top: -42px;
+    z-index: -2;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+  .dias-contador::before {
+    top: 40px;
+    left: -30px;
+  }
+  .galeria-box {
+    height: 100vh;
+    max-width: 100%;
+    display: grid;
+    place-items: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .principal {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .conteudo-midia {
+    grid-template-columns: auto 1fr;
+  }
+  .galeria-polaroid {
+    border-left: 25px solid #fff;
+    border-right: 25px solid #fff;
+    border-top: 25px solid #fff;
+    border-bottom: 35px solid #fff;
+  }
+}
+
+@media (max-width: 600px) {
+  .amor {
+    width: 30px;
+    right: 0;
+  }
+  .conteudo-midia {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .conteudo-central-p {
+    text-align: center;
+  }
+  .dias {
+    min-width: 50%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 32px;
+  }
+  .dias::after {
+    content: "";
+    display: block;
+    background-color: #dddddd;
+    height: 5px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    left: -89px;
+  }
+  .dias::before {
+    content: "";
+    display: block;
+    background-color: #dddddd;
+    height: 5px;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    right: -89px;
+  }
+}

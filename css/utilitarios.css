@@ -1,0 +1,122 @@
+:root {
+  /* Cores Escuras */
+  --cor-0: #ffffff;
+  --cor-1: #f7f7f7;
+  --cor-2: #ededed;
+  --cor-3: #d3d3d3;
+  --cor-4: #c0c0c0;
+  --cor-5: #a9a9a9;
+  --cor-6: #8f8f8f;
+  --cor-7: #717171;
+  --cor-8: #585858;
+  --cor-9: #3f3f3f;
+  --cor-10: #2b2b2b;
+  --cor-11: #131313;
+  --cor-12: #000000;
+
+  /* Cor de Contraste */
+  --cor-c1: #fca311;
+  --cor-c2: #ef233c;
+}
+
+.cor-0 {
+  color: var(--cor-0);
+}
+.cor-01 {
+  color: var(--cor-1);
+}
+.cor-02 {
+  color: var(--cor-2);
+}
+.cor-03 {
+  color: var(--cor-3);
+}
+.cor-04 {
+  color: var(--cor-4);
+}
+.cor-05 {
+  color: var(--cor-5);
+}
+.cor-06 {
+  color: var(--cor-6);
+}
+.cor-07 {
+  color: var(--cor-7);
+}
+.cor-08 {
+  color: var(--cor-8);
+}
+.cor-09 {
+  color: var(--cor-9);
+}
+.cor-10 {
+  color: var(--cor-10);
+}
+.cor-11 {
+  color: var(--cor-11);
+}
+.cor-12 {
+  color: var(--cor-12);
+}
+.cor-c1 {
+  color: var(--cor-c1);
+}
+.cor-c2 {
+  color: var(--cor-c2);
+}
+
+/* Tipografia */
+.font-1-xs {
+  font: 400 0.75rem/1.35 "Poppins", sans-serif;
+}
+.font-1-s {
+  font: 400 1rem/1.5 "Poppins", sans-serif;
+}
+.font-1-m,
+.font-1-m-b {
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+.font-1-m-b {
+  font-weight: 600;
+}
+.font-1-l {
+  font: 400 1.125rem/1.35 "Poppins", sans-serif;
+}
+.font-1-xm {
+  font: 600 1.5rem/1.25 "Poppins", sans-serif;
+}
+.font-1-xl {
+  font: 600 2rem/1.25 "Poppins", sans-serif;
+}
+.font-1-xxl {
+  /* Peso da fonte, tamanho, line-height e familia */
+  font: 600 4rem/1.125 "Poppins", sans-serif;
+}
+.font-1-xxlg {
+  /* Peso da fonte, tamanho, line-height e familia */
+  font: 600 6rem/1 "Poppins", sans-serif;
+}
+
+.font-2-esc {
+  font: 600 2rem/1.25 "Dancing Script", sans-serif;
+}
+@media (max-width: 1200px) {
+  .font-1-xxl {
+    font-size: 3rem;
+  }
+  .font-1-xxlg {
+    font-size: 5rem;
+  }
+  .font-2-esc {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .font-1-xxl {
+    font-size: 2rem;
+  }
+  .font-1-xl {
+    font-size: 1.5rem;
+  }
+}
