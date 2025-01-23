@@ -54,3 +54,20 @@
     height: 200px;
   }
 }
+
+@media (max-height: 650px){
+  .swiper {
+    width: 350px;
+    height: 350px;
+  }
+
+  .galeria{
+    justify-self: start;
+  }
+}
+@media (max-height: 400px){
+  .swiper {
+    width: 280px;
+    height: 280px;
+  }
+}

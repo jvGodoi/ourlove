@@ -112,6 +112,18 @@
   }
 }
 
+@media(max-width: 1024px){
+  .font-1-xxl {
+    font-size: 2rem;
+  }
+  .font-1-xxlg {
+    font-size: 3rem;
+  }
+  .font-2-esc {
+    font-size: 1.6rem;
+  }
+}
+
 @media (max-width: 800px) {
   .font-1-xxl {
     font-size: 2rem;
