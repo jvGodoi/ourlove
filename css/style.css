@@ -55,10 +55,11 @@ body {
 
 .conteudo-midia-2 p {
   width: 100%;
+  text-align: justify;
 }
 
 .conteudo-midia::before {
-  content: url("../img/coracao-24.png");
+  content: url("../img/icones/coracao-24.png");
   position: absolute;
   right: 47%;
   bottom: 18px;
@@ -300,7 +301,7 @@ body {
   position: absolute;
   left: -20px;
   top: -60px;
-  background-image: url("../img/love-clock-64.png");
+  background-image: url("../img/icones/love-clock-64.png");
 }
 
 .galeria {
@@ -325,14 +326,14 @@ body {
 
 .galeria-polaroid-conteudo {
   display: flex;
-  padding-top: 32px;
+  padding-top: 16px;
   position: relative;
 }
 
 .amor {
   width: 60px;
   position: absolute;
-  right: 20px;
+  right: 0;
   bottom: -20px;
 }
 
@@ -354,12 +355,6 @@ body {
   .principal {
     gap: 30px;
   }
-}
-
-@media (max-width: 1200px) {
-  .principal {
-    gap: 30px;
-  }
 
   .cal-1 {
     display: none;
@@ -367,6 +362,12 @@ body {
 
   .cal-2 {
     display: none;
+  }
+  .amor {
+    width: 50px;
+    position: absolute;
+    right: 0px;
+    bottom: -40px;
   }
 }
 
@@ -386,7 +387,7 @@ body {
     align-items: center;
     height: auto;
     width: 850px;
-    padding: 140px 16px 32px 16px;
+    padding-bottom: 116px;
   }
 
   .galeria {
@@ -475,7 +476,7 @@ body {
     border-left: 25px solid #fff;
     border-right: 25px solid #fff;
     border-top: 25px solid #fff;
-    border-bottom: 35px solid #fff;
+    border-bottom: 55px solid #fff;
   }
 }
 
@@ -487,14 +488,13 @@ body {
   .principal {
     padding: 140px 16px 32px 16px;
   }
+  .amor {
+    width: 40px;
+    right: 0;
+  }
 }
 
 @media (max-width: 600px) {
-  .amor {
-    width: 30px;
-    right: 0;
-  }
-
   .conteudo-midia {
     grid-template-columns: 1fr;
     gap: 0;
@@ -544,6 +544,10 @@ body {
   .cal-1,
   .cal-2 {
     display: none;
+  }
+  .amor {
+    width: 20px;
+    right: 0;
   }
 }
 

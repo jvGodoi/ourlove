@@ -13,16 +13,16 @@ const durationEl = document.querySelector(".duration");
 // Sons
 const SongsList = [
   {
-    path: "./musicas/lifetime.mp3",
-    Songname: "Lifetime",
-    cantor: "Justin Bieber",
-    capa: "./img/capas/justin.jpg",
-  },
-  {
     path: "./musicas/Cor_de_Marte.mp3",
     Songname: "Cor de Marte",
     cantor: "ANAVITÓRIA",
     capa: "./img/capas/anavitoria.jpg",
+  },
+  {
+    path: "./musicas/lifetime.mp3",
+    Songname: "Lifetime",
+    cantor: "Justin Bieber",
+    capa: "./img/capas/justin.jpg",
   },
   {
     path: "./musicas/cars_outside.mp3",
@@ -37,16 +37,16 @@ const SongsList = [
     capa: "./img/capas/ruthb.jpg",
   },
   {
-    path: "./musicas/All_of_Me.mp3",
-    Songname: "All Of Me",
-    cantor: "John Legend",
-    capa: "./img/capas/allofme.jpg",
-  },
-  {
     path: "./musicas/iris.mp3",
     Songname: "Iris",
     cantor: "Goo Goo Dolls",
     capa: "./img/capas/dolls.jpg",
+  },
+  {
+    path: "./musicas/All_of_Me.mp3",
+    Songname: "All Of Me",
+    cantor: "John Legend",
+    capa: "./img/capas/allofme.jpg",
   },
   {
     path: "./musicas/Ser_Humano_Ou_Anjo.mp3",
