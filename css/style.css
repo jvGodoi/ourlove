@@ -55,7 +55,6 @@ body {
 
 .conteudo-midia-2 p {
   width: 100%;
-  text-align: justify;
 }
 
 .conteudo-midia::before {
@@ -536,7 +535,7 @@ body {
 
 @media (max-width: 650px) {
   .principal {
-    padding: 60px 16px 32px 16px;
+    padding: 10px 16px 32px 16px;
   }
 }
 
