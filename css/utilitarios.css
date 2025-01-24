@@ -69,6 +69,9 @@
 .font-1-xs {
   font: 400 0.75rem/1.35 "Poppins", sans-serif;
 }
+.font-1-x {
+  font: 400 0.9rem/1.35 "Poppins", sans-serif;
+}
 .font-1-s {
   font: 400 1rem/1.5 "Poppins", sans-serif;
 }
@@ -112,7 +115,7 @@
   }
 }
 
-@media(max-width: 1024px){
+@media (max-width: 1024px) {
   .font-1-xxl {
     font-size: 2rem;
   }
@@ -130,5 +133,14 @@
   }
   .font-1-xl {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .font-1-xm {
+    font-size: 1.1rem;
+  }
+  .font-1-s {
+    font-size: 0.7rem;
   }
 }

@@ -60,6 +60,24 @@ const SongsList = [
     cantor: "Stephen Sanchez",
     capa: "./img/capas/you.jpg",
   },
+  {
+    path: "./musicas/janeiro.mp3",
+    Songname: "De Janeiro a Janeiro",
+    cantor: "Nando Reis",
+    capa: "./img/capas/janeiro.jpg",
+  },
+  {
+    path: "./musicas/dois_coracoes.mp3",
+    Songname: "Dois Corações",
+    cantor: "Melim",
+    capa: "./img/capas/dois_coracoes.jpg",
+  },
+  {
+    path: "./musicas/nao_te_largo.mp3",
+    Songname: "Não te largo, Não te troco",
+    cantor: "Ana Gabriela e Melim",
+    capa: "./img/capas/nao_troco.jpg",
+  },
 ];
 
 let isPlaying = false;
