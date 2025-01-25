@@ -35,7 +35,6 @@ body {
 
 .conteudo-midia {
   display: grid;
-
   grid-template-columns: auto 1fr;
   column-gap: 32px;
   position: relative;
@@ -336,17 +335,27 @@ body {
   bottom: -20px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
+  .conteudo-midia-2 {
+    height: 200px;
+  }
   .dias-contador-box {
     bottom: 5px;
   }
+}
 
+@media (max-width: 1440px) {
   .dias-contador-box::after {
     bottom: -10px;
   }
 
   .dias-contador-box::before {
     bottom: -10px;
+  }
+  .dias {
+    height: max-content;
+    align-self: center;
+    padding: 70px 30px 35px 30px;
   }
 }
 
@@ -447,7 +456,6 @@ body {
     position: absolute;
     transform: rotate(90deg);
   }
-
   .dias-contador::before {
     top: 40px;
     left: -30px;
@@ -557,32 +565,32 @@ body {
   }
 }
 
-@media (max-height: 650px) {
+@media (max-height: 700px) {
   .galeria-box {
     width: 100%;
     justify-content: center;
   }
-
+  .conteudo-midia-2 {
+    overflow-x: scroll;
+    height: 200px;
+  }
+  .amor {
+    top: 100%;
+    bottom: 0;
+  }
   .principal {
-    padding: 160px 16px 32px 16px;
     max-height: auto;
     gap: 100px;
   }
 
-  .conteudo-midia {
-    grid-template-columns: 1fr;
-    place-items: center;
-    margin-top: 100px;
-  }
-
   .dias {
-    min-width: 80%;
-    margin: 32px auto;
+    min-width: max-content;
     justify-items: center;
   }
 
   .musica {
-    min-width: 80%;
+    min-width: 50%;
+    align-self: center;
   }
 
   .conteudo-midia-2 {
